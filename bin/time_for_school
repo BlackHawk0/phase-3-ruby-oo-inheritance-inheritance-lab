@@ -18,3 +18,24 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+
+
+
+dan = Student.new
+dan.first_name = 'Daniel'
+dan.last_name = 'dan dan'
+
+
+new_knowledge = avi.teach
+dan.learn(new_knowledge)
+
+puts "Daniel just learned this important knowledge: '#{dan.knowledge.first} from Avi"
+
+# inheritance works downwords
+jim = User.new
+jim.first_name ='Jim'
+jim.last_name ='Jimmy'
+
+jim.learn(some_knowledge)
+puts "Jim just learned this important knowledge: '#{jim.knowledge.first}' from Avi"
